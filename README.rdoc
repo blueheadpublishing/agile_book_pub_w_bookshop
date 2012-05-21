@@ -1,12 +1,7 @@
-Part One: Getting Started
-1. Installing BookShop
-  1.1 Installing on Windows
-  1.2 Installing on Mac OS X
-  1.3 Installing on Linux (Ubuntu)
-  1.4 Setting up Your Development Environment
 
-2. Instant Gratification
-  1.1 Creating a New Book
+ 
+
+
   1.2 Your Master book.html.erb File
   1.3 Let's Build Some Books
 

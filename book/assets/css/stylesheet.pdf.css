@@ -160,6 +160,8 @@ table.lined td, table.lined th {
 /* define default page and names pages: cover, blank, frontmatter */
 
 @page :left {
+	margin-right: 40mm;
+	
   @top-left {
     font: 11pt "Gill Sans", serif;
     content: "Cascading Style Sheets";
@@ -176,6 +178,7 @@ table.lined td, table.lined th {
 }
 
 @page :right {
+	margin-left: 40mm;
   @top-right {
     font: 11pt "Gill Sans", serif;
     content: string(header, first); 

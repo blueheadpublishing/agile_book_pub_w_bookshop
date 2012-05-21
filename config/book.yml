@@ -10,12 +10,12 @@
 #        <p>Whew! We made it!</p>
 #      <% end %>
 
-title: Cascading Style Sheets
-subtitle: Designing for the Web
+title: Agile Book Development with Bookshop
+subtitle: Designing Your Book For Tomorrow
 isbn: 1234567891011     # ISBN-13
 creator: 
 publisher: BlueHead Publishing
-contributor: 'H&#229;kon Wium Lie and Bert Bos'
+contributor: 'Dave Thompson'
 date: 2012-03-31
 type:
 format:
@@ -25,6 +25,7 @@ language: en
 relation:
 coverage:
 rights:
+version: 0.1.0
 
 
 
@@ -32,18 +33,18 @@ rights:
 # You can use these settings in your source layouts by using a tag
 #   in book.html.erb you could use <%= @book.pdf.title %>
 pdf:
-  title: Cascading Style Sheets
+  title: Agile Book Development with Bookshop
 
 
 # Place the epub specific settings here.
 epub:
-  title: Cascading Style Sheets
+  title: Agile Book Development with Bookshop
   version: 0.1.1
 
 
 # Place the html specific settings here
 html:
-  title: Cascading Style Sheets
+  title: Agile Book Development with Bookshop
 
 
 # You can add any additional variables you want

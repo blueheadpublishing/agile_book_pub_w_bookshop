@@ -20,15 +20,72 @@
   <%= import('frontmatter/toc.html.erb')%>
 <% end %>
 
-<%= import('frontmatter/preface.html.erb')%>
+<div class="part">
+  <h1>Part One: Getting Started</h1>
+  
+  <div class="preface">
+    <h1>Introduction</h1>
+    
+    <p>So why another invent another way of building a book? The answer: Neither of the current options seemed scalable.<p>
+    <p>Currently there three basic processes for building a book in all its formats (print-pdf, kindle, iBooks, etc.):</p>
+    Build the book in each individual format.
+      
+    Build the book in InDesign(R) and export to all the different formats.
+    Build the book in XML and use XSL/XSLT's to transform it into each format.
+    
+    The first option works fine if you only have one book, or one author. You can even pull this off if you have a few. But you will soon discover that with each new book, your workload increases exponentially. Every revision edit you have to make, needs to be made to a number of files. This is an expensive human resource, error prone, and does not scale very well as you become successful.
+    
+    The second options was built to solve the scalability issue. Major publishing firms with hundreds of books have been able to develop these robust toolchains, allowing them to work with one book source code, from which all the other formats are constructed automatically. This has been a significant leap forward for the industry. The only problem? Have any of you actually tried to learn XML/XSL/XSLT? O... M... G... If you ever plan to hire someone to manage your toolchain, get ready to pay out the nose for that highly skilled and very limited labor pool. The time it takes to convert the book into the toolchain is incredibly heavy on the front end. Plus, if you want an author, or editor, or random business person to make an edit or change... good luck!
+    
 
-<!-- Chapter 01 has additional imports included inside of it -->
-<%= import('bodymatter/ch01/ch01.html.erb')%>
+  <div class="chapter">
+  <h1>Installing BookShop</h1>
+    
+    <div class="section">
+      <h1>Installing on Windows</h1>
+    </div>
 
-<!-- Chapter 02 has additional imports included inside of it -->
-<%= import('bodymatter/ch02/ch02.html.erb')%>
-
-
-<%= import('backmatter/index.html.erb')%>
+    <div class="section">
+      <h1>Installing on Mac OS X</h1>
+    </div>
+    
+    <div class="section">
+      <h1>Installing on Linux (Ubuntu)</h1>
+    </div>
+    
+    <div class="section">
+      <h1>Setting up Your Development Environment</h1>
+    </div>
+  </div>
+  
+  <div class="chapter">
+    <h1>Instant Gratification</h1>
+    <p>Since we profess to be an agile shop, we want to put our money where our mouth is - well, it's open source, so instead of money we'll just say mojo. Rather than walking you through an entire conceptual framework and working through diagrams, lets just jump into the code and take a quick look around.</p>
+    <p>In this chapter we will:</p>
+    <ul>
+      <li>Create a new book project</li>
+      <li>Take a look around and see where things are</li>
+      <li>Talk about the master book.html.erb file</li>
+      <li>Build some books in different formats</li>
+    </ul>
+    <div class="section">
+      <h1>Creating a New Book</h1>
+      <p>We are going to walk you through the development of a book in Bookshop by looking at a very simple example of a book. And best of all, it already comes bundled in Bookshop as part of your installation. You can use it as a point of reference when you are building a new book.</p> 
+      <p>So let's go ahead. Issue 'bookshop new example'</p>
+      <p>You should see a list of things being built. Here's a basic breakdown:</p>
+      
+      <p>.gitignore - Tells git what not to version
+        book/
+        builds/
+        config/
+        script/</p>
+        
+      <p>The book folder is where you book's source lives. All of the code to build all of the different types of formats will be stored here.</p>
+      <p>The builds folder is where all of the different builds will be saved, like the PDF, mobi, epub, etc. Each time a new build is built, the old builds are deleted and new ones are placed in the file.</p>
+      <p>The config folder is where all of the configuration for bookshop and your book live, like the book data (more on that later) and the config file for bookshop.</p>
+      <p>The script folder is where the bookshop script lives.</p>
+    </div>
+  </div>
+</div>
 
 </body></html>
